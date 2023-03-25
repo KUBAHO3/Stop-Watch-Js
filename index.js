@@ -15,9 +15,12 @@ window.onload = function () {
        Interval = setInterval(startTimer, 10);
     }
     
-
-     
+      buttonStop.onclick = function() {
+         clearInterval(Interval);
+    }
     
+  
+   
     function startTimer () {
       tens++; 
       
