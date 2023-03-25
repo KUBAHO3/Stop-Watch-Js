@@ -10,12 +10,13 @@ window.onload = function () {
     var Interval ;
   
     buttonStart.onclick = function() {
-      
+    buttonStart.innerHTML = "Start";
       clearInterval(Interval);
        Interval = setInterval(startTimer, 10);
     }
     
       buttonStop.onclick = function() {
+        buttonStart.innerHTML = "Resume";
          clearInterval(Interval);
     }
     
